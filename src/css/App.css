@@ -1,0 +1,13 @@
+.App {
+
+}
+.header {
+    list-style: none;
+}
+.header li:first-child{
+    font-weight: bold;
+}
+.header li {
+    display: inline;
+    margin: 0 15px;
+}
