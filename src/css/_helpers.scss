@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.eot"), url("../fonts/Gilroy-Medium.ttf"), url("../fonts/Gilroy-Medium.woff");
+}
+@font-face {
+    font-family: "GilroySemiBold";
+    src: url("../fonts/Gilroy-SemiBold.eot"), url("../fonts/Gilroy-SemiBold.ttf"), url("../fonts/Gilroy-SemiBold.woff");
+}
+
+@mixin vcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin flex-hc {
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-vc {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-hvc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -5,10 +5,12 @@ import "antd/dist/antd.css";
 
 import Home from "./components/home/Home";
 import NotFound from "./components/notFound/NotFound";
-import Signin from "./components/signin/Signin";
+
 import store from "./store";
 
-import "./../css/App.css";
+import "./../css/_helpers.scss";
+import "./../css/App.scss";
+import Header from "./components/home/Header";
 
 class App extends React.Component {
     render() {
@@ -16,24 +18,17 @@ class App extends React.Component {
             <Provider store={store}>
                 <Router>
                     <div className="App">
-                        <ul className="header">
-                            <li>Cluster Colloboration Platform</li>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Signin />
-                            </li>
-                        </ul>
-
-                        <Switch>
-                            <Route exact path="/">
-                                <Home />
-                            </Route>
-                            <Route path="*">
-                                <NotFound />
-                            </Route>
-                        </Switch>
+                        <div className="App-wrapper">
+                            <Header />
+                            <Switch>
+                                <Route exact path="/">
+                                    <Home />
+                                </Route>
+                                <Route path="*">
+                                    <NotFound />
+                                </Route>
+                            </Switch>
+                        </div>
                     </div>
                 </Router>
             </Provider>

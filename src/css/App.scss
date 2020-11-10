@@ -1,0 +1,18 @@
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/bg-head__desc.png") #000c17;
+}
+.header {
+    list-style: none;
+}
+.header li:first-child{
+    font-weight: bold;
+}
+.header li {
+    display: inline;
+    margin: 0 15px;
+    font-family: GilroyMedium;
+}
