@@ -1,0 +1,63 @@
+@import "./_helpers.scss";
+
+.header {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 160px;
+    margin: 0 auto;
+    padding: 30px 0 30px;
+    &-logo {
+        @include flex-vc;
+        padding-right: 8px;
+    }
+    &-content {
+        &-top {
+            @include flex-vc;
+            justify-content: space-between;
+            justify-self: flex-end;
+            min-width: 348px;
+            min-height: 36px;
+            margin-bottom: 30px;
+        }
+        &__social {
+            @include flex-vc;
+            justify-content: space-between;
+            width: 110px;
+            a {
+                width: 18px;
+                height: 18px;
+            }
+        }
+        &__lang {
+            @include flex-vc;
+            padding-right: 16px;
+            height: 18px;
+            color: #FFFFFF;
+            text-transform: capitalize;
+            font-size: 16px;
+            font-family: GilroySemiBold;
+            line-height: normal;
+            background: url("../images/svg/dropdown-bottom.svg") center right no-repeat;
+        }
+        &__auth {
+            .ant-btn {
+                @include flex-hvc;
+                width: 120px;
+                height: 36px;
+                line-height: normal;
+                font-weight: normal;
+                color: #fff;
+                font-size: 16px;
+                font-family: GilroySemiBold;
+                border: none;
+                background: #FD6C02;
+                border-radius: 36px;
+            }
+        }
+    }
+    &-bottom {}
+
+}

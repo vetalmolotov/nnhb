@@ -1,18 +1,18 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 .App {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background: url("../images/bg-head__desc.png") #000c17;
+    flex-direction: column;
 }
-.header {
-    list-style: none;
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 32px;
+    &-top {
+        background: url("../images/bg-head__desc.png") no-repeat 0 0;
+        background-size: cover;
+    }
 }
-.header li:first-child{
-    font-weight: bold;
-}
-.header li {
-    display: inline;
-    margin: 0 15px;
-    font-family: GilroyMedium;
-}
+

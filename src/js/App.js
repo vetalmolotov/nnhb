@@ -1,16 +1,14 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "antd/dist/antd.css";
-
+import store from "./store";
+import ContentTop from "./components/home/ContentTop";
 import Home from "./components/home/Home";
 import NotFound from "./components/notFound/NotFound";
 
-import store from "./store";
-
 import "./../css/_helpers.scss";
 import "./../css/App.scss";
-import Header from "./components/home/Header";
 
 class App extends React.Component {
     render() {
@@ -18,8 +16,7 @@ class App extends React.Component {
             <Provider store={store}>
                 <Router>
                     <div className="App">
-                        <div className="App-wrapper">
-                            <Header />
+                            <ContentTop />
                             <Switch>
                                 <Route exact path="/">
                                     <Home />
@@ -29,7 +26,6 @@ class App extends React.Component {
                                 </Route>
                             </Switch>
                         </div>
-                    </div>
                 </Router>
             </Provider>
         );
