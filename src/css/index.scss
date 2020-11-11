@@ -1,7 +1,67 @@
-body {
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.section {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 32px;
+    @media screen and (max-width: 1024px) {
+        padding: 0 60px 0 108px;
+    }
+    &-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 800px;
+        padding-bottom: 137px;
+        background: url("../images/bg-head__desc.png") no-repeat center center;
+        background-size: cover;
+        @media screen and (max-width: 1024px) {
+            background-image: url("../images/bg-head__tablet.png");
+        }
+    }
+    &__content {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+    &-title {
+        font-family: GilroySemiBold;
+        margin-bottom: 25px;
+    }
+    &-subtitle {
+        font-family: GilroySemiBold;
+        margin-bottom: 14px;
+    }
+    &-text {
+        font-size: 18px;
+        font-family: GilroySemiBold;
+        line-height: 140%;
+    }
+}
+.svg-figure {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: all .5s;
+    &__white {
+        top: -58px;
+        left: 0;
+        width: 322px;
+        @media screen and (max-width: 1024px) {
+            top: -63px;
+            width: 177px;
+            left: -16px;
+        }
+    }
+    &__green {
+        top: -203px;
+        right: 0;
+        width: 335px;
+        //height: 469px
+        @media screen and (max-width: 1024px) {
+            top: -115px;
+            width: 200px;
+            right: -59px;
+        }
+    }
 }

@@ -1,10 +1,16 @@
 @font-face {
     font-family: "GilroyMedium";
-    src: url("../fonts/Gilroy-Medium.eot"), url("../fonts/Gilroy-Medium.ttf"), url("../fonts/Gilroy-Medium.woff");
+    src:
+        url("../fonts/Gilroy-Medium.eot"),
+        url("../fonts/Gilroy-Medium.ttf"),
+        url("../fonts/Gilroy-Medium.woff");
 }
 @font-face {
     font-family: "GilroySemiBold";
-    src: url("../fonts/Gilroy-SemiBold.eot"), url("../fonts/Gilroy-SemiBold.ttf"), url("../fonts/Gilroy-SemiBold.woff");
+    src:
+        url("../fonts/Gilroy-SemiBold.eot"),
+        url("../fonts/Gilroy-SemiBold.ttf"),
+        url("../fonts/Gilroy-SemiBold.woff");
 }
 
 @mixin vcenter {

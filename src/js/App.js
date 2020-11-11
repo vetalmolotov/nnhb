@@ -7,7 +7,6 @@ import ContentTop from "./components/home/ContentTop";
 import Home from "./components/home/Home";
 import NotFound from "./components/notFound/NotFound";
 
-import "./../css/_helpers.scss";
 import "./../css/App.scss";
 
 class App extends React.Component {
@@ -20,6 +19,9 @@ class App extends React.Component {
                             <Switch>
                                 <Route exact path="/">
                                     <Home />
+                                </Route>
+                                <Route exact path="/about">
+                                    <div>about</div>
                                 </Route>
                                 <Route path="*">
                                     <NotFound />

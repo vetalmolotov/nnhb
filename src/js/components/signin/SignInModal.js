@@ -41,6 +41,7 @@ class SignInModal extends React.Component {
             <>
                 <Modal
                     title="Sign In"
+                    className="App-auth"
                     visible={this.props.visible}
                     onCancel={this.props.handleCancel}
                     footer={[]}

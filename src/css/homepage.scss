@@ -1,0 +1,29 @@
+.section {
+    $this: &;
+    &-middle {
+        background: #fff;
+        #{$this}__content {
+            padding: 123px 0 80px;
+            position: relative;
+            z-index: 2;
+        }
+        #{$this}-title {
+            font-size: 96px;
+            line-height: 80%;
+            color: #000;
+        }
+        #{$this}-subtitle {
+            max-width: 905px;
+            color: #000;
+            font-size: 24px;
+            line-height: 120%;
+        }
+        #{$this}-text {
+            max-width: 905px;
+            font-size: 18px;
+            line-height: 140%;
+            color: #000;
+            opacity: 0.4;
+        }
+    }
+}

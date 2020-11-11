@@ -1,1 +1,15 @@
-body {}
+.section {
+    $this: &;
+    &-top-homepage {
+        #{$this}-title {
+            max-width: 855px;
+            color: #fff;
+            font-size: 72px;
+            line-height: 90%;
+        }
+        #{$this}-text {
+            max-width: 780px;
+            color: #fff;
+        }
+    }
+}
