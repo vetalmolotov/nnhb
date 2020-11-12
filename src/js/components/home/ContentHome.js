@@ -1,16 +1,17 @@
 import React from "react";
 import {ReactComponent as SvgFigureWhite} from '../../../images/svg/figure-white.svg';
+import SvgFigureWhite from '../../../images/figure-white.png';
 import SvgFigureGreen from '../../../images/figure-green.png';
 
 import "../../../css/homepage.scss";
 
-class Home extends React.Component {
+class ContentHome extends React.Component {
     render() {
         return (
             <>
-                <section className="section section-middle">
+                <section className="section section-homepage-middle">
                     <div className="svg-figure svg-figure__white">
-                        <SvgFigureWhite />
+                        <img src={SvgFigureWhite} />
                     </div>
                     <div className="svg-figure svg-figure__green">
                         <img src={SvgFigureGreen} />
@@ -22,7 +23,7 @@ class Home extends React.Component {
                     </div>
                 </section>
 
-                <section className="section section-bottom">
+                <section className="section section-homepage-bottom">
                     <div className="section__content">
                         <h1 className="section-title">fsaf</h1>
                         <p className="section-text">fsaf</p>
@@ -34,4 +35,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default ContentHome;

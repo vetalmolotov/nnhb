@@ -1,6 +1,6 @@
 .section {
     $this: &;
-    &-top-homepage {
+    &-header {
         #{$this}-title {
             max-width: 855px;
             color: #fff;

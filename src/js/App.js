@@ -3,8 +3,8 @@ import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "antd/dist/antd.css";
 import store from "./store";
-import ContentTop from "./components/home/ContentTop";
-import Home from "./components/home/Home";
+import ContentHeader from "./components/ContentHeader";
+import ContentHome from "./components/home/ContentHome";
 import NotFound from "./components/notFound/NotFound";
 
 import "./../css/App.scss";
@@ -15,10 +15,10 @@ class App extends React.Component {
             <Provider store={store}>
                 <Router>
                     <div className="App">
-                            <ContentTop />
+                            <ContentHeader />
                             <Switch>
                                 <Route exact path="/">
-                                    <Home />
+                                    <ContentHome />
                                 </Route>
                                 <Route exact path="/about">
                                     <div>about</div>
