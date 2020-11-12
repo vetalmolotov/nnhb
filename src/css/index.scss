@@ -7,17 +7,8 @@
     @media screen and (max-width: 1024px) {
         padding: 0 60px 0 108px;
     }
-    &-top {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 800px;
-        padding-bottom: 137px;
-        background: url("../images/bg-head__desc.png") no-repeat center center;
-        background-size: cover;
-        @media screen and (max-width: 1024px) {
-            background-image: url("../images/bg-head__tablet.png");
-        }
+    &-header {
+
     }
     &__content {
         width: 100%;
@@ -41,7 +32,7 @@
 .svg-figure {
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 0;
     transition: all .5s;
     &__white {
         top: -58px;
@@ -63,5 +54,14 @@
             width: 200px;
             right: -59px;
         }
+    }
+    &__orange-left {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    &__orange-right {
+        top: 25px;
+        right: 0;
     }
 }

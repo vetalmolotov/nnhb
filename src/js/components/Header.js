@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import Signin from "./signin/Signin";
 import SiteLogo from "./SiteLogo";
 import {ReactComponent as FacebookIcon} from '../../images/icons/facebook.svg';

@@ -1,6 +1,6 @@
 .section {
     $this: &;
-    &-middle {
+    &-homepage-middle {
         background: #fff;
         #{$this}__content {
             padding: 123px 0 80px;
@@ -24,6 +24,20 @@
             line-height: 140%;
             color: #000;
             opacity: 0.4;
+        }
+    }
+    &-homepage-bottom {
+        background: #FD6C02;
+        padding-bottom: 60px!important;
+        #{$this}__content {
+            position: relative;
+            padding: 122px 0 60px;
+            z-index: 2;
+        }
+        #{$this}-title {
+            font-size: 72px;
+            line-height: 80%;
+            color: #fff;
         }
     }
 }

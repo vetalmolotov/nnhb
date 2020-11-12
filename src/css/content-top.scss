@@ -1,6 +1,16 @@
 .section {
     $this: &;
     &-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 800px;
+        padding-bottom: 137px;
+        background: url("../images/bg-head__desc.png") no-repeat center center;
+        background-size: cover;
+        @media screen and (max-width: 1024px) {
+            background-image: url("../images/bg-head__tablet.png");
+        }
         #{$this}-title {
             max-width: 855px;
             color: #fff;
