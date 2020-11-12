@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Header";
+import Header from "./Header";
 
-import "../../../css/content-top.scss";
+import "../../css/content-top.scss";
 import {Route, Switch} from "react-router-dom";
 
 class ContentHeader extends React.Component {

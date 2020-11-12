@@ -1,7 +1,7 @@
 import React from "react";
 import {ReactComponent as SvgFigureWhite} from '../../../images/svg/figure-white.svg';
-import SvgFigureWhite from '../../../images/figure-white.png';
-import SvgFigureGreen from '../../../images/figure-green.png';
+import ImageFigureWhite from '../../../images/figure-white.png';
+import ImageFigureGreen from '../../../images/figure-green.png';
 
 import "../../../css/homepage.scss";
 
@@ -11,10 +11,10 @@ class ContentHome extends React.Component {
             <>
                 <section className="section section-homepage-middle">
                     <div className="svg-figure svg-figure__white">
-                        <img src={SvgFigureWhite} />
+                        <img src={ImageFigureWhite} />
                     </div>
                     <div className="svg-figure svg-figure__green">
-                        <img src={SvgFigureGreen} />
+                        <img src={ImageFigureGreen} />
                     </div>
                     <div className="section__content">
                         <h3 className="section-title">Who we are</h3>
