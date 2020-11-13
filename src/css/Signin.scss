@@ -1,0 +1,132 @@
+@import "./_helpers.scss";
+
+.login-form {
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-form-button {
+  width: 100%;
+}
+.App-auth {
+    .ant-modal {
+        &-close {
+            top: 40px;
+            right: 40px;
+        }
+        &-content {
+            overflow: hidden;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+        }
+        &-header {
+            padding: 60px 60px 27px;
+            border-bottom: none;
+        }
+        &-title {
+            @include flex-vc;
+            color: #000;
+            font-size: 36px;
+            height: 30px;
+            font-family: GilroySemiBold;
+        }
+        &-body {
+            padding: 0 60px;
+        }
+        &-footer {
+            border-top: none;
+            padding: 15px 0 20px;
+        }
+    }
+    .ant-row {
+        flex-flow: column;
+    }
+    .ant-form {
+        &-item {
+            margin-bottom: 15px;
+            &:last-child .ant-form-item-control-input-content {
+                text-align: center;
+            }
+        }
+        &-item-label {
+            text-align: left;
+            font-family: GilroyMedium;
+            padding-left: 12px;
+            & > label {
+                color: rgba(0, 0, 0, 0.4);
+            }
+            & > label::after, & > label::before {
+                display: none!important;
+            }
+        }
+        &-item-control-input {
+            .ant-input {
+                font-family: GilroyMedium;
+                height: 40px;
+                border-radius: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.08);
+            }
+            .ant-input-suffix {
+                display: none;
+            }
+            .ant-input-password {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+    .ant-checkbox + span {
+        font-family: GilroyMedium;
+    }
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+        border: none
+    }
+    .ant-checkbox-inner {
+        width: 46px;
+        height: 28px;
+        padding: 4px;
+        background: rgba(63, 113, 183, 0.45);
+        border: none;
+        border-radius: 28px;
+        outline: transparent;
+        &::after {
+            content: '';
+            top: 4px;
+            left: 4px;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            border: none;
+            opacity: 1;
+            transform: rotate(0deg) scale(1) translate(0, 0);
+        }
+    }
+    .ant-checkbox:hover::after, .ant-checkbox-wrapper:hover .ant-checkbox::after {
+        visibility: hidden;
+    }
+    .ant-checkbox-checked {
+        .ant-checkbox-inner {
+            background: rgba(63, 113, 183, 1);
+            &::after {
+                left: initial;
+                right: 4px;
+            }
+        }
+    }
+    .ant-btn-link {
+        font-family: GilroyMedium;
+        font-weight: normal;
+        color: #3F71B7;
+    }
+    .login-form-button {
+        height: 40px;
+        background: #81C448;
+        border-radius: 40px;
+        border-color: #81C448;
+    }
+}

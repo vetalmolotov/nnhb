@@ -6,6 +6,62 @@
     position: inherit;
     &__wrapper {
         margin: 0 -32px;
+        .slick-prev,
+        .slick-next {
+            width: 24px;
+            height: 20px;
+            top: 143px;
+            z-index: 3;
+            transform: translate(0px, 0px);
+            &.slick-disabled {
+                opacity: 0.64;
+            }
+            &::before {
+                display: none;
+            }
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+        }
+        .slick-prev {
+            left: initial;
+            right: 247px;
+            background: url("../images/arrow-prev.png") no-repeat 0 0;
+            background-size: contain;
+        }
+        .slick-next {
+            right: 183px;
+            background: url("../images/arrow-next.png") no-repeat 0 0;
+            background-size: contain;
+        }
+        .slick-list {
+            padding-left: 120px;
+            height: 441px;
+            overflow-y: hidden;
+            @media screen and (max-width: 1024px) {
+                padding-left: 60px;
+            }
+            @media screen and (max-width: 600px) {
+                padding-left: 32px;
+            }
+        }
+        .slick-track {
+            display: flex!important;
+            & > .slick-slide {
+                float: none!important;
+            }
+        }
+        .slick-slide {
+            width: 100%;
+            max-width: 270px;
+            margin-right: 30px;
+            &.slick-current {
+                margin-left: 0;
+            }
+            & + .slick-current {
+                margin-left: 0;
+            }
+        }
     }
     &-item {
         &__image {
@@ -39,12 +95,31 @@
         margin: 53px 0 0 140px;
         color: rgba(255, 255, 255, 0.72);
         background: url("../images/lock_icon.png") 0 0 no-repeat;
+        @media screen and (max-width: 1024px) {
+            @include flex-hvc;
+            width: 100%;
+            max-width: 370px;
+            margin: 53px auto 0;
+        }
+        @media screen and (max-width: 600px) {
+            margin: 24px auto 0;
+            height: auto;
+            min-height: 24px;
+            max-width: 336px;
+            background-position: top left;
+        }
     }
     &__more {
         @include flex-hc;
         margin: 52px 0 0 0;
         width: 100%;
         height: 60px;
+        @media screen and (max-width: 1024px) {
+            margin: 38px 0 0;
+        }
+        @media screen and (max-width: 600px) {
+
+        }
         a {
             @include flex-hvc;
             width: 360px;
@@ -59,45 +134,5 @@
             }
         }
     }
-    .slick-prev,
-    .slick-next {
-        width: 24px;
-        height: 20px;
-        top: 143px;
-        z-index: 3;
-        transform: translate(0px, 0px);
-        &.slick-disabled {
-            opacity: 0.64;
-        }
-        &::before {
-            display: none;
-        }
-    }
-    .slick-prev {
-        left: initial;
-        right: 247px;
-        background: url("../images/arrow-prev.png") no-repeat 0 0;
-        background-size: contain;
-    }
-    .slick-next {
-        right: 183px;
-        background: url("../images/arrow-next.png") no-repeat 0 0;
-        background-size: contain;
-    }
-    .slick-list {
-        padding-left: 120px;
-        height: 441px;
-        overflow-y: hidden;
-    }
-    .slick-slide {
-        width: 100%;
-        max-width: 270px;
-        margin-right: 30px;
-        &.slick-current {
-            margin-left: 0;
-        }
-        & + .slick-current {
-            margin-left: 0;
-        }
-    }
+
 }

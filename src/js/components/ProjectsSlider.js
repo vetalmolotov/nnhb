@@ -36,11 +36,41 @@ class ProjectsSlider extends Component {
             slidesToScroll: 1,
             variableWidth: true,
             nextArrow: <SampleNextArrow />,
-            prevArrow: <SamplePrevArrow />
+            prevArrow: <SamplePrevArrow />,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        initialSlide: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         };
         return (
             <div className="projects__wrapper">
                 <Slider {...settings}>
+                    {/*
+                    еслиб была api и с бекэнда приходили какие-то данные, то
+                    лучшеб было применить тут {.map()}
+                    */}
                     <div className="projects-item">
                         <div className="projects-item__image">
                             <img src={Image1} />

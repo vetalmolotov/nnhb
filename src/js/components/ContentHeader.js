@@ -12,6 +12,11 @@ class ContentHeader extends React.Component {
                 <Switch>
                     <Route exact path="/">
                         <div className="section__content">
+                            {/*
+                            Правильней было бы создать отдельный компонент с элементом section__content
+                            и передавать ему данные для section-title и для section-text,
+                            но у нас тут статика и ничего не приходит с бекэнда
+                            */}
                             <h1 className="section-title">Collaboration Platform for Africa and Middle East</h1>
                             <p className="section-text">Cluster Collaboration Platform provides networking and information support for clusters and their members aiming to improve their performance and increase their competitiveness through trans-national and international cooperation.</p>
                         </div>

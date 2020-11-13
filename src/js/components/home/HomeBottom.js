@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectsSlider from "../ProjectsSlider";
+import ProjectsMenuSlider from "../ProjectsMenuSlider";
 import ImageFigureLeft from '../../../images/figure-orange-left.png';
 import ImageFigureRight from '../../../images/figure-orange-right.png';
 
@@ -26,6 +27,7 @@ class HomeBottom extends React.Component {
                         <a href="#" className="projects-list__item">Medical</a>
                         <a href="#" className="projects-list__item">More</a>
                     </div>
+                    <ProjectsMenuSlider />
                 </div>
                 <ProjectsSlider />
                 <div className="projects__more">

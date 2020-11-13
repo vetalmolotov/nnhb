@@ -14,7 +14,7 @@ import SignOnModal from "./SignOnModal";
 import PassForgotModal from "./PassForgotModal";
 import SignInModal from "./SignInModal";
 
-import "../../../css/Signin.css";
+import "../../../css/Signin.scss";
 
 class Signin extends React.Component {
     constructor(props) {

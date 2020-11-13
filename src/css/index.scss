@@ -1,11 +1,12 @@
+@import './Signin.scss';
 
 .section {
     position: relative;
     width: 100%;
     max-width: 1440px;
     padding: 0 32px;
-    @media screen and (max-width: 1024px) {
-        padding: 0 60px 0 108px;
+    @media screen and (max-width: 600px) {
+        padding: 0 20px;
     }
     &-header {
 
@@ -14,6 +15,12 @@
         width: 100%;
         max-width: 1080px;
         margin: 0 auto;
+        @media screen and (max-width: 1024px) {
+            padding: 0 28px 0 76px;
+        }
+        @media screen and (max-width: 600px) {
+            padding: 0;
+        }
     }
     &-title {
         font-family: GilroySemiBold;
@@ -39,29 +46,52 @@
         left: 0;
         width: 322px;
         @media screen and (max-width: 1024px) {
-            top: -63px;
-            width: 177px;
+            top: -65px;
+            width: 198px;
             left: -16px;
+        }
+        @media screen and (max-width: 600px) {
+            top: -29px;
+            width: 176px;
+            left: -75px;
         }
     }
     &__green {
         top: -203px;
         right: 0;
         width: 335px;
-        //height: 469px
         @media screen and (max-width: 1024px) {
-            top: -115px;
+            top: -123px;
             width: 200px;
-            right: -59px;
+            right: -36px;
+        }
+        @media screen and (max-width: 600px) {
+            top: -86px;
+            width: 166px;
+            right: -100px;
         }
     }
     &__orange-left {
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+        @media screen and (max-width: 1024px) {
+            top: 45%;
+            transform: translateY(0);
+        }
+        @media screen and (max-width: 600px) {
+            left: -60%
+        }
     }
     &__orange-right {
         top: 25px;
         right: 0;
+        @media screen and (max-width: 1024px) {
+            right: -35%;
+        }
+        @media screen and (max-width: 600px) {
+            top: 55px;
+            right: -74%;
+        }
     }
 }

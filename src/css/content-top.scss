@@ -5,21 +5,39 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: 800px;
-        padding-bottom: 137px;
+        padding-bottom: 137px!important;
         background: url("../images/bg-head__desc.png") no-repeat center center;
         background-size: cover;
         @media screen and (max-width: 1024px) {
             background-image: url("../images/bg-head__tablet.png");
+            padding-bottom: 129px!important;
+        }
+        @media screen and (max-width: 600px) {
+            background-image: url("../images/bg-head__mob.png");
+            padding-bottom: 72px!important;
+        }
+        @media screen and (max-width: 600px) {
+            min-height: 638px;
         }
         #{$this}-title {
             max-width: 855px;
             color: #fff;
             font-size: 72px;
             line-height: 90%;
+            @media screen and (max-width: 1024px) {
+                font-size: 56px;
+                margin-bottom: 19px;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 36px;
+            }
         }
         #{$this}-text {
             max-width: 780px;
             color: #fff;
+            @media screen and (max-width: 1024px) {
+                font-size: 18px;
+            }
         }
     }
 }

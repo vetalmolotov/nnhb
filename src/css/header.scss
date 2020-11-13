@@ -11,6 +11,10 @@
     padding: 30px 0 30px;
     @media screen and (max-width: 1024px) {
         min-height: initial;
+        padding: 30px;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 32px 0;
     }
     &-logo {
         @include flex-vc;
@@ -18,6 +22,9 @@
         svg {
             width: 100%;
             max-width: 263px;
+            @media screen and (max-width: 600px) {
+                max-width: 214px;
+            }
         }
     }
     &-content {
@@ -119,11 +126,19 @@
 
 }
 .mob-menu {
+    display: none;
     position: absolute;
     top: 75px;
     right: 75px;
     z-index: 100;
     visibility: hidden;
+    @media screen and (max-width: 1024px) {
+        display: block;
+    }
+    @media screen and (max-width: 600px) {
+        top: 50px;
+        right: 30px;
+    }
     &:checked {
         & + .header-content {
             display: flex;
