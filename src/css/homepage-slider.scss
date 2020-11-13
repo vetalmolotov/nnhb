@@ -32,6 +32,7 @@
     }
     &__notify {
         @include flex-vc;
+        height: 24px;
         font-family: GilroySemiBold;
         font-size: 14px;
         padding: 0 0 0 32px;
@@ -85,9 +86,12 @@
     }
     .slick-list {
         padding-left: 120px;
+        height: 441px;
+        overflow-y: hidden;
     }
     .slick-slide {
-        width: 270px;
+        width: 100%;
+        max-width: 270px;
         margin-right: 30px;
         &.slick-current {
             margin-left: 0;

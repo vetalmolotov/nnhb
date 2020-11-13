@@ -1,3 +1,5 @@
+@import "./_helpers.scss";
+
 .section {
     $this: &;
     &-homepage-middle {
@@ -31,13 +33,42 @@
         padding-bottom: 60px!important;
         #{$this}__content {
             position: relative;
-            padding: 122px 0 60px;
+            padding: 122px 0 0;
             z-index: 2;
         }
         #{$this}-title {
             font-size: 72px;
             line-height: 80%;
             color: #fff;
+            margin-bottom: 18px;
+        }
+    }
+}
+.projects {
+    &-list {
+        display: flex;
+        align-items: stretch;
+        height: 42px;
+        margin-bottom: 43px;
+        &__item {
+            @include flex-vc;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-family: GilroySemiBold;
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+            opacity: 0.75;
+            transition: all .5s;
+            &--active {
+                opacity: 1;
+                border-bottom: 1px solid rgba(255, 255, 255, 1);
+            }
+            &:hover {
+                color: #fff;
+                border-bottom: 1px solid rgba(255, 255, 255, 1);
+            }
+            & + & {
+                margin-left: 39px;
+            }
         }
     }
 }
